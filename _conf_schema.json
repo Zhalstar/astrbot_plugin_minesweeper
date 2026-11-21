@@ -1,0 +1,81 @@
+{
+    "default_skin": {
+        "description": "扫雷默认皮肤",
+        "hint": "",
+        "type": "string",
+        "options": [
+            "clone",
+            "colorsonly",
+            "hibbeler",
+            "icicle",
+            "mario",
+            "maviz",
+            "mine",
+            "narkomania",
+            "ocean",
+            "pacman",
+            "predator",
+            "scratch",
+            "symbol",
+            "unknown",
+            "vista",
+            "win98",
+            "winbw",
+            "winxp"
+        ],
+        "labels": [
+            "经典复刻",
+            "纯色风格",
+            "Hibbeler 风格",
+            "冰晶风格",
+            "马里奥主题",
+            "Maviz 风格",
+            "地雷主题",
+            "迷幻风格",
+            "海洋风格",
+            "吃豆人主题",
+            "铁血战士主题",
+            "手绘涂鸦风格",
+            "符号风格",
+            "未知风格",
+            "Windows Vista 风格",
+            "Windows 98 风格",
+            "Windows 黑白风格",
+            "Windows XP 风格"
+        ],
+        "default": "winxp"
+    },
+    "difficulty_level": {
+        "description": "扫雷难度设置",
+        "hint": "格式为：名称 行数 列数 雷数。空格隔开每个参数。用户未指定难度时默认使用第一个难度",
+        "type": "list",
+        "default": [
+            "初级 8 8 10",
+            "中级 16 16 40",
+            "高级 16 30 99"
+        ]
+    },
+    "ban_time": {
+        "description": "失败禁言时长",
+        "hint": "单位为秒，游戏失败时禁言踩雷的玩家（有权限时才生效），此处定义禁言时长",
+        "type": "int",
+        "slider": {
+            "min": 0,
+            "max": 600,
+            "step": 1
+        },
+        "default": 300
+    },
+    "mark_prefix": {
+        "description": "标雷前缀",
+        "hint": "用于标记地雷的前缀符号，例如'表示单引号可以触发标雷",
+        "type": "string",
+        "default": "'"
+    },
+    "sweep_prefix": {
+        "description": "清扫前缀",
+        "hint": "用于清扫（中键）操作的前缀符号，支持多个符号，例如'#'表示#号可以触发清扫",
+        "type": "string",
+        "default": "#"
+    }
+}

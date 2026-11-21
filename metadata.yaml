@@ -1,0 +1,8 @@
+name: astrbot_plugin_minesweeper 
+display_name: 扫雷游戏
+desc: 经典的扫雷小游戏
+help: 略
+version: v1.3.1
+author: 饰乐
+repo: https://github.com/Zhalstar/astrbot_plugin_minesweeper
+astrbot_version: ">=4.26.1"
